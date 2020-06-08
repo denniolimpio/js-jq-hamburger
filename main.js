@@ -1,17 +1,21 @@
+// definisco le mie variabili
+var openMenu = $(".header-right > a");
+var closeMenu = $( ".close");
+var burgerMenu = $(".hamburger-menu")
 
-
-$('.header-right > a').click(
+//apro il menu
+$(openMenu).click(
   function()
   {
-
-$('.hamburger-menu').addClass("active");
-
-});
-
-$(".close").click(
-  function(){
-
-    $( ".hamburger-menu").removeClass("active");
-
-}
+    $(burgerMenu).addClass("active");
+  }
 );
+
+  // chiudo il menu
+  $(closeMenu).click(
+    function(){
+
+      $(burgerMenu).removeClass("active");
+
+    }
+  );
